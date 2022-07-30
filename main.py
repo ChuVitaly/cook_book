@@ -1,6 +1,5 @@
 cook_book = {}
 cook_book_keys = []
-# list_values = []
 list_keys = ['ingredient_name', 'quantity', 'measure']
 
 with open("recipes.txt", "r") as file:
@@ -21,4 +20,10 @@ with open("recipes.txt", "r") as file:
             list_values.append(new_dict)
             i += 1
         cook_book[f"{key}"] = list_values
-print(cook_book)
+
+print('cook_book = {')
+for key in cook_book:
+    print(f"'{key}':")
+    for value in cook_book[key]:
+        print(f"{value}")
+print("}")
