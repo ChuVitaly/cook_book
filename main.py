@@ -27,3 +27,5 @@ for key in cook_book:
     for value in cook_book[key]:
         print(f"{value}")
 print("}")
+
+# Задача №2
